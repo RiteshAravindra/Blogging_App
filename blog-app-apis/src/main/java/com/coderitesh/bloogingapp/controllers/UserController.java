@@ -3,10 +3,12 @@ package com.coderitesh.bloogingapp.controllers;
 import java.util.List;
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.apache.logging.log4j.message.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +24,7 @@ import com.coderitesh.bloogingapp.payloads.ApiResponce;
 import com.coderitesh.bloogingapp.payloads.UserDto;
 import com.coderitesh.bloogingapp.services.UserService;
 
-import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("/api/users")
